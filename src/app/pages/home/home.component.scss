@@ -1,6 +1,18 @@
+
 #id{
   display: flex;
   justify-content: left;
+}
+#welcome{
+  display: flex;
+  justify-content: center;
+}
+#new_container{
+  border-style: solid;
+  border-width: thin;
+  border-radius: 1%;
+  margin: 10px;
+  background-color: rgb(153, 103, 153);
 }
 #title{
   display: flex;

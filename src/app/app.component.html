@@ -1,4 +1,5 @@
-<mat-toolbar>
+<div id="background">
+  <mat-toolbar color="primary">
   <button mat-icon-button class="news-icon" aria-label="Example icon-button with menu icon">
     <mat-icon >library_books</mat-icon>
   </button>
@@ -14,5 +15,9 @@
     <button mat-button id="dnbutton" (click)="loginW()" *ngIf="!(user$ | async)">Dang Nhap </button>
     <button mat-button id="dxbutton" (click)="logoutW()" *ngIf="(user$ | async)">Dang xuat</button>
   </div>
+  <div *ngIf="(user$ | async)">{{ user?.displayName }}</div>
 </mat-toolbar>
 <router-outlet></router-outlet>
+</div>
+
+
