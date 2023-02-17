@@ -1,0 +1,9 @@
+
+<div id ="new"  *ngFor="let n of (new$|async)">
+  <div id="title"><h1>{{n.title}}</h1></div>
+  <div id="des"><p>{{n.description}}</p></div>
+  <div id="date"><p>{{n.readable_publish_date}}</div>
+   <div id="image"><img [src]="n.social_image" alt=""></div>
+   <div id="url"><p>{{n.url}}</p></div>
+</div>
+

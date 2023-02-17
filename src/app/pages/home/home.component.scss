@@ -1,0 +1,27 @@
+#id{
+  display: flex;
+  justify-content: left;
+}
+#title{
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-weight: 200;
+}
+#des{
+  display: flex;
+  justify-content: center;
+  font-size: large;
+}
+#date{
+  display: flex;
+  margin-left: 70%;
+}
+#url{
+  display: flex;
+  justify-content: center;
+}
+#image{
+  display: flex;
+  justify-content: center;
+}

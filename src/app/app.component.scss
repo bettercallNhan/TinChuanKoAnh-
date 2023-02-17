@@ -1,0 +1,19 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+#dnbutton{
+  background-color: white;
+  color: black;
+  padding-right: 5px;
+}
+#dnbutton:active{
+  background-color: black;
+}
+#dxbutton{
+  background-color: rgb(156, 145, 145);
+  color: black;
+}
+#dxbutton:active{
+  background-color: black;
+}
+
