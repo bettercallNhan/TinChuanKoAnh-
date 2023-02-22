@@ -1,7 +1,22 @@
-
 #id{
   display: flex;
   justify-content: left;
+}
+#profile{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#username{
+  font-size: 20px;
+  margin: 5px 0px 20px 20px;
+  font-weight: 500;
+}
+#profileimage{
+  border-radius: 100%;
+  border-style: solid;
+  border-color: rgb(90, 13, 90);
 }
 #welcome{
   display: flex;

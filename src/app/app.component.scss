@@ -1,6 +1,15 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+.dn-button-row{
+  margin: 10px;
+}
+img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
 #dnbutton{
   background-color: white;
   color: black;
@@ -20,5 +29,26 @@
   display: flex;
   justify-content: center;
 }
+// #bg_im{
+//   background-image: url('https://wallpaperaccess.com/full/1558245.jpg');
+//   background-size: cover;
+//   width: 1263px;
+//   height: 600px;
 
+// }
+#welcome_container{
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+}
+#welcome{
 
+  background-color: rgb(179, 166, 137);
+  border-radius: 5px;
+}
+h1{
+  display: flex;
+  align-self: center;
+  font-size: 30px;
+  padding-top: 5px;
+}

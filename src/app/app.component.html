@@ -8,16 +8,21 @@
   <button mat-icon-button class="home-icon " [routerLink]="['home']" aria-label="Example icon-button with heart icon">
     <mat-icon>home</mat-icon>
   </button>
-  <button mat-icon-button class="cart-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>add_shopping_cart</mat-icon>
-  </button>
   <div class="dn-button-row">
     <button mat-button id="dnbutton" (click)="loginW()" *ngIf="!(user$ | async)">Dang Nhap </button>
     <button mat-button id="dxbutton" (click)="logoutW()" *ngIf="(user$ | async)">Dang xuat</button>
   </div>
   <div *ngIf="(user$ | async)">{{ user?.displayName }}</div>
+  <div *ngIf="(user$ | async)"><img [src]="user?.photoURL" alt=""></div>
 </mat-toolbar>
 <router-outlet></router-outlet>
+<!-- <div id ="bg_im">..</div> -->
+<div id="welcome_container">
+  <!-- <div id="welcome">
+    <h1>CHAO MUNG BAN TOI TIN TUC</h1>
+  </div> -->
+</div>
+
 </div>
 
 

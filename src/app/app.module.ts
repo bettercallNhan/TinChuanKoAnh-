@@ -12,7 +12,10 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { HttpClientModule } from '@angular/common/http';
-
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { NewsEffect } from 'src/effect/news.effect';
+import { newsReducers } from 'src/reducer/news.reducer';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import { HttpClientModule } from '@angular/common/http';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot({news: newsReducers}, {}),
+    EffectsModule.forRoot([NewsEffect])
   ],
   providers: [],
   bootstrap: [AppComponent]
